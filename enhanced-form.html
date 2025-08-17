@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An HTML5 page showcasing lists, tables, media, and an advanced user-friendly form with built-in validation.">
+    <meta name="keywords" content="HTML5, forms, validation, lists, tables, accessibility, media">
+    <title>HTML5 Enhanced Content & Forms</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header role="banner">
+        <h1>HTML5 Enhanced Content & Forms Example</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+
+        <!-- Lists Section -->
+        <section id="lists">
+            <h2>Our Services</h2>
+            <p>We offer a variety of services to meet your web development needs:</p>
+            <ul>
+                <li>Web Development</li>
+                <li>SEO Optimization</li>
+                <li>Accessibility Audits</li>
+            </ul>
+
+            <h3>Top Features:</h3>
+            <ol>
+                <li>Responsive Design</li>
+                <li>Semantic HTML</li>
+                <li>User-Friendly Interfaces</li>
+            </ol>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="pricing">
+            <h2>Pricing Table</h2>
+            <table border="1">
+                <caption>Service Pricing</caption>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Basic</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>$500</td>
+                        <td>$1000</td>
+                    </tr>
+                    <tr>
+                        <td>SEO Optimization</td>
+                        <td>$200</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility Audit</td>
+                        <td>$150</td>
+                        <td>$300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Our Team</h2>
+            <p>Meet our team collaborating on web projects:</p>
+            <img src="team-work.jpg" alt="Team collaborating on web development project" width="600">
+            
+            <h3>Introduction Video</h3>
+            <video width="600" controls>
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Podcast Sample</h3>
+            <audio controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Form Section -->
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required minlength="2"><br><br>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required minlength="2"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?\d{7,15}$"><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a password" required minlength="6"><br><br>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required minlength="6"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="service">Select a Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="seo">SEO Optimization</option>
+                        <option value="audit">Accessibility Audit</option>
+                    </select><br><br>
+
+                    <label>Newsletter Subscription:</label><br>
+                    <input type="radio" id="subscribe-yes" name="newsletter" value="yes">
+                    <label for="subscribe-yes">Yes</label>
+                    <input type="radio" id="subscribe-no" name="newsletter" value="no" checked>
+                    <label for="subscribe-no">No</label><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your message here..."></textarea><br><br>
+                </fieldset>
+
+                <input type="submit" value="Submit Form">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Enhanced HTML5 Forms Example. All rights reserved.</p>
+        <p><a href="#main-content">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
